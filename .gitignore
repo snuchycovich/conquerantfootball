@@ -50,4 +50,6 @@ db/
 /src/web/update.php
 /src/web/web.config
 
+/src/drush/
+
 # End of https://www.gitignore.io/api/drupal8
