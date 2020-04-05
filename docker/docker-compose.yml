@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  web:
+  php:
     build:
       context: .
     container_name: ccf_web
