@@ -18,6 +18,7 @@ RUN set -eux; \
 		libpng-dev \
 		libpq-dev \
 		libzip-dev \
+		git \
 	; \
 	\
 	docker-php-ext-configure gd \
@@ -32,7 +33,6 @@ RUN set -eux; \
 		pdo_mysql \
 		pdo_pgsql \
 		zip \
-		git \
 	; \
 	\
 # reset apt-mark's "manual" list so that "purge --auto-remove" will remove all build dependencies
