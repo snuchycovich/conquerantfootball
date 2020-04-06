@@ -9,6 +9,7 @@ services:
       - 8080:80
     volumes:
       - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf:ro
+      - ./php.conf:/usr/local/etc/php/conf.d/maxsize.ini
       - ../src:/var/www/html:rw
     restart: always
 
