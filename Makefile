@@ -18,7 +18,7 @@ clean-full:
 	sudo docker rmi -f $(shell sudo docker images -q)
 
 logs:
-	sudo docker-compose -f docker-compose.yml logs -f
+	sudo docker-compose -f docker/docker-compose.yml logs -f
 
 php:
 	sudo docker-compose -f docker/docker-compose.yml exec php bash
