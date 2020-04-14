@@ -8,8 +8,14 @@
  * defined here.
  *
  * You can copy existing variables directly from the following file:
- * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ * ./ccf/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@font-face {
+  font-family: "versaversa";
+  src: url("../fonts/versa-versa-webfont.woff2") format("woff2"), url("../fonts/versa-versa-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 Twitter, Inc.
@@ -7996,6 +8002,235 @@ p:last-child,
 }
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar-default {
+  text-transform: uppercase;
+  background-color: #b7a369ff;
+}
+.navbar-default .region-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+
+/* page */
+.page-header {
+  font-family: "versaversa";
+  color: #FFFFFF;
+}
+
+.path-academy a {
+  text-decoration: none;
+}
+.path-academy .view-content {
+  display: flex;
+}
+.path-academy .view-content .views-row {
+  position: relative;
+  width: 33%;
+  margin-right: 15px;
+  height: 200px;
+  background-color: #FFFFFF;
+}
+.path-academy .view-content .views-row .views-field-field-image {
+  float: left;
+  margin-right: 15px;
+}
+.path-academy .view-content .views-row .views-field-title {
+  margin: 30px 10px 10px 0;
+  height: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.path-academy .view-content .views-row .views-field-title .field-content {
+  font-family: "versaversa";
+}
+.path-academy .view-content .views-row .views-field-title .field-content a {
+  color: #b7a369ff;
+  font-size: 1.2em;
+}
+.path-academy .view-content .views-row .views-field-field-category {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.path-academy .view-content .views-row .views-field-field-category a {
+  padding: 2px 5px;
+  background-color: #b7a369ff;
+  color: #000000;
+  font-weight: bold;
+}
+.path-academy .view-content .views-row .views-field-field-unit {
+  margin-bottom: 5px;
+}
+.path-academy .view-content .views-row .views-field-field-unit a {
+  margin-right: 5px;
+  padding: 2px 8px;
+  background-color: #000000;
+  border-radius: 4px;
+  color: #b7a369ff;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.path-academy .view-content .views-row .views-field-field-tags {
+  font-size: 0.7em;
+  text-transform: lowercase;
+}
+.path-academy .view-content .views-row .views-field-field-tags a {
+  color: #555555;
+}
+.path-academy .view-content .views-row .views-field-field-tags a:hover {
+  color: #555555;
+}
+.path-academy .view-content .views-row .views-field-field-tags a:before {
+  content: "#";
+}
+.path-academy .view-content .views-row:last-child {
+  margin-right: 0;
+}
+
+.page-node-type-formation .formation .content {
+  margin-top: 20px;
+  padding: 40px 0;
+  background-color: #FFFFFF;
+}
+.page-node-type-formation .formation .page-header {
+  padding: 15px;
+  margin: 0 auto 20px;
+  width: 75%;
+  text-align: center;
+  color: #000000;
+}
+.page-node-type-formation .formation .field--name-field-video {
+  text-align: center;
+}
+.page-node-type-formation .formation .field--name-field-video video {
+  width: 75% !important;
+}
+.page-node-type-formation .formation .field--name-body {
+  margin: 40px auto;
+  width: 75%;
+  text-align: justify;
+}
+.page-node-type-formation .formation .field--name-field-category,
+.page-node-type-formation .formation .field--name-field-unit {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.page-node-type-formation .formation .field--name-field-category a,
+.page-node-type-formation .formation .field--name-field-unit a {
+  text-decoration: none;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  background-color: #b7a369ff;
+  border-radius: 4px;
+}
+.page-node-type-formation .formation .field--name-field-category a:hover,
+.page-node-type-formation .formation .field--name-field-unit a:hover {
+  background-color: #555555;
+}
+.page-node-type-formation .formation .field--name-field-unit {
+  margin-bottom: 0px;
+}
+.page-node-type-formation .formation .field--name-field-unit .field--items {
+  display: flex;
+  justify-content: center;
+}
+.page-node-type-formation .formation .field--name-field-unit .field--items .field--item {
+  margin: 0 5px 5px 0;
+}
+.page-node-type-formation .formation .field--name-field-unit .field--items .field--item:last-child {
+  margin-right: 0;
+}
+.page-node-type-formation .formation .field--name-field-unit .field--items .field--item a {
+  color: #b7a369ff;
+  background-color: #000000;
+}
+.page-node-type-formation .formation .field--name-field-unit .field--items .field--item a:hover {
+  background-color: #555555;
+}
+.page-node-type-formation .formation .field--name-field-tags {
+  font-size: 1.5em;
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items {
+  display: flex;
+  justify-content: center;
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items .field--item {
+  margin-right: 5px;
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items .field--item a {
+  text-transform: lowercase;
+  color: #C0C0C0;
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:before {
+  content: "#";
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:hover {
+  color: #505050;
+}
+.page-node-type-formation .formation .field--name-field-tags .field--items .field--item:last-child {
+  margin-right: 0;
+}
+.page-node-type-formation .formation .author {
+  padding: 2px 5px;
+  background-color: #555555;
+  color: #b7a369ff;
+  text-align: right;
+}
+
+#block-ccf-main-menu {
+  font-weight: bold;
+}
+
+#block-home {
+  text-align: center;
+  color: #b7a369ff;
+}
+#block-home h2 {
+  margin-top: 40px;
+  font-family: "versaversa";
+  font-size: 4em;
+  background-color: #b7a369ff;
+  color: #000000;
+  padding: 10px;
+}
+#block-home h3, #block-home h4 {
+  text-transform: uppercase;
+}
+
+#block-contactblock {
+  background-color: #b7a369ff;
+  padding: 15px;
+}
+
+#block-connexionutilisateur {
+  width: 50%;
+  margin: 0 auto;
+}
+#block-connexionutilisateur #user-login-form {
+  background-color: #b7a369ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+#block-connexionutilisateur #user-login-form #edit-actions {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

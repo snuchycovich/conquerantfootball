@@ -7,7 +7,7 @@
  * defined here.
  *
  * You can copy existing variables directly from the following file:
- * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ * ./ccf/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 
 // Set the directory for the theme root used to locate images, fonts etc.
@@ -16,3 +16,11 @@ $theme-root: '..';
 // Set other directories relative to theme root.
 $image-path: '#{$theme-root}/images';
 $icon-font-path: '#{$theme-root}/bootstrap/assets/fonts/bootstrap/';
+
+@font-face {
+  font-family: 'versaversa';
+  src: url('../fonts/versa-versa-webfont.woff2') format('woff2'),
+  url('../fonts/versa-versa-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
