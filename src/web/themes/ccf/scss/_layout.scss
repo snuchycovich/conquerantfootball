@@ -1,0 +1,22 @@
+body {
+  background-color: #000000;
+}
+.navbar-header {
+  width: 100%;
+}
+.navbar-default {
+  text-transform: uppercase;
+  background-color: #b7a369ff;
+  .region-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-nav > li > a {
+    color: #000000;
+  }
+}
+
+.region-highlighted {
+  //display: flex;
+  //justify-content: space-between;
+}

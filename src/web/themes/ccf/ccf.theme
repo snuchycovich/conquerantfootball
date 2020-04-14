@@ -6,3 +6,20 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+/**
+ * @param $variables
+ */
+function ccf_preprocess_page(&$variables)
+{
+    $node = $variables['node'];
+
+    if (isset($node) && $node instanceof \Drupal\node\Entity\Node) {
+        $node_type = $node->getType();
+
+        if ($node_type == "formation") {
+            unset($variables['page']['content']['ccf_page_title']);
+        }
+    }
+}

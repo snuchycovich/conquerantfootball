@@ -1,0 +1,38 @@
+#block-ccf-main-menu {
+  font-weight: bold;
+
+}
+
+#block-home {
+  text-align: center;
+  color: #b7a369ff;
+  h2 {
+    margin-top: 40px;
+    font-family: 'versaversa';
+    font-size: 4em;
+    background-color:  #b7a369ff;
+    color: #000000;
+    padding: 10px;
+  }
+  h3, h4 {
+    text-transform: uppercase;
+  }
+}
+
+#block-contactblock {
+  background-color: #b7a369ff;
+  padding: 15px;
+}
+
+#block-connexionutilisateur {
+  width: 50%;
+  margin: 0 auto;
+  #user-login-form {
+    background-color: #b7a369ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    #edit-actions {
+      text-align: center;
+    }
+  }
+}
