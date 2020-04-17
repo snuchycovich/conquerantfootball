@@ -1,11 +1,6 @@
 # from https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements
-FROM node AS node
-
 FROM php:7.3-apache-stretch
 # TODO switch to buster once https://github.com/docker-library/php/issues/865 is resolved in a clean way (either in the PHP image or in PHP itself)
-
-COPY --from=node /usr/local/bin /usr/local/bin/
-COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
 
 # install the PHP extensions we need
 RUN set -eux; \
@@ -64,9 +59,18 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+RUN \
+  apt-get update && apt-get install -y --no-install-recommends --no-install-suggests curl bzip2 build-essential libssl-dev libreadline-dev zlib1g-dev && \
+  rm -rf /var/lib/apt/lists/* && \
+  curl -L https://github.com/sstephenson/ruby-build/archive/v20180329.tar.gz | tar -zxvf - -C /tmp/ && \
+  cd /tmp/ruby-build-* && ./install.sh && cd / && \
+  ruby-build -v 2.5.1 /usr/local && rm -rfv /tmp/ruby-build-* && \
+  gem install bundler --no-rdoc --no-ri
+
+RUN gem install sass
+
+# Install composer
 RUN cd /usr/src && \
     curl -sS http://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-
-RUN npm install -g sass
 
 WORKDIR /var/www/html
