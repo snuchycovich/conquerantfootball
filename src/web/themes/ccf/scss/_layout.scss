@@ -7,16 +7,14 @@ body {
 .navbar-default {
   text-transform: uppercase;
   background-color: #b7a369ff;
-  .region-navigation {
-    display: flex;
-    justify-content: space-between;
-  }
   .navbar-nav > li > a {
     color: #000000;
   }
+  menu--account {
+    justify-content: end;
+  }
 }
 
-.region-highlighted {
-  //display: flex;
-  //justify-content: space-between;
+.main-container {
+  padding-top: 40px;
 }

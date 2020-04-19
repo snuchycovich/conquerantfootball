@@ -10,107 +10,107 @@
   a {
     text-decoration: none;
   }
+  .region-content{
+    width: 860px;
+    margin: 0 auto;
+  }
   .view-content {
     display: flex;
+    flex-wrap: wrap;
     .views-row {
       position: relative;
-      width: 33%;
-      margin-right: 15px;
-      height: 200px;
+      margin-right: 8px;
+      margin-bottom: 15px;
+      padding-right: 10px;
+      width: 49%;
+      height: 120px;
       background-color: #FFFFFF;
+      border-radius: 100% 0 0 100%;
+
       .views-field-field-image {
         float: left;
-        margin-right: 15px;
+        margin-right: 40px;
+
+        img {
+          border-radius: 100%;
+          border: 5px solid #000000;
+        }
       }
+
       .views-field-title {
-        margin: 30px 10px 10px 0;
-        height: 100px;
+        margin-top: 10px;
         text-transform: uppercase;
         font-weight: bold;
+
         .field-content {
           font-family: 'versaversa';
+
           a {
             color: #b7a369ff;
             font-size: 1.2em;
           }
         }
       }
+
       .views-field-field-category {
         position: absolute;
-        right: 0;
-        top: 0;
-        margin-bottom: 5px;
+        right: -46px;
+        bottom: 47px;
+        padding: 4px 5px;
+        text-align: center;
+        width: 120px;
         text-transform: uppercase;
-        a {
-          padding: 2px 5px;
-          background-color: #b7a369ff;
-          color: #000000;
-          font-weight: bold;
-        }
+        transform: rotate(-90deg);
+        background-color: #b7a369ff;
+        color: #000000;
+        font-weight: bold;
       }
+
       .views-field-field-unit {
         margin-bottom: 5px;
-        a {
-          margin-right: 5px;
-          padding: 2px 8px;
-          background-color: #000000;
-          border-radius: 4px;
-          color: #b7a369ff;
-          font-weight: bold;
-          font-size: .7em;
-        }
-      }
-      .views-field-field-tags {
-        font-size: .7em;
-        text-transform: lowercase;
-        a {
-          color: #555555;
-          &:hover {
-            color: #555555;
-          }
-          &:before {
-            content: '#';
-          }
-        }
-      }
-      &:last-child {
-        margin-right: 0;
+        color: #555555;
+        font-weight: bold;
       }
     }
   }
 }
 
 .page-node-type-formation {
+  .content {
+    width: 75%;
+    margin: 0 auto;
+  }
   .formation {
-    .content {
-      margin-top: 20px;
-      padding: 40px 0;
-      background-color: #FFFFFF;
-    }
     .page-header {
       padding: 15px;
-      margin: 0 auto 20px;
-      width: 75%;
+      margin: 0 auto 5px;
       text-align: center;
-      color: #000000;
+      color: #ffffff;
+    }
+    .author {
+      margin-bottom: 15px;
+      font-size: 0.8em;
+      color: #FFFFFF;
+      text-align: center;
     }
 
     .field--name-field-video {
       text-align: center;
+      margin-bottom: 10px;
       video {
-        width: 75% !important;
+        width: 100% !important;
       }
     }
     .field--name-body {
-      margin: 40px auto;
-      width: 75%;
+      margin: 10px auto;
+      padding: 15px;
       text-align: justify;
+      background-color: #ffffff;
     }
     .field--name-field-category,
     .field--name-field-unit {
-      margin-bottom: 15px;
-      text-align: center;
-      font-size: 1.5em;
+      float :left;
+      margin-bottom: 10px;
       a {
         text-decoration: none;
         padding: 4px 8px;
@@ -118,7 +118,6 @@
         font-weight: bold;
         color: #000000;
         background-color: #b7a369ff;
-        border-radius: 4px;
         &:hover {
           background-color: #555555;
         }
@@ -130,9 +129,16 @@
         display: flex;
         justify-content: center;
         .field--item {
-          margin: 0 5px 5px 0;
+          &:after {
+            font-weight: bold;
+            content: '/';
+            margin: 0 2px;
+          }
           &:last-child {
             margin-right: 0;
+            &:after {
+              content: '';
+            }
           }
           a {
             color: #b7a369ff;
@@ -145,10 +151,9 @@
       }
     }
     .field--name-field-tags {
-      font-size: 1.5em;
       .field--items {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         .field--item {
           margin-right: 5px;
           a {
@@ -167,12 +172,6 @@
         }
 
       }
-    }
-    .author {
-      padding:2px 5px;
-      background-color: #555555;
-      color: #b7a369ff;
-      text-align: right;
     }
   }
 
