@@ -1,0 +1,48 @@
+@media (max-width: 959px) {
+
+  .navbar-header {
+    float: none;
+  }
+
+  #block-home {
+    img{
+      width:300px;
+    }
+    h2 {
+      font-size: 3em;
+    }
+  }
+  // Academy
+  .path-academy {
+    a {
+      text-decoration: none;
+    }
+    .region-content{
+      width: 100%;
+      margin: 0;
+    }
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 80%;
+      .views-row {
+        width: 100%;
+      }
+    }
+  }
+  .page-node-type-formation {
+    .formation {
+      .field--name-field-tags {
+        clear: both;
+
+        .field--items {
+          justify-content: start;
+        }
+      }
+    }
+  }
+
+
+
+}

@@ -52,4 +52,6 @@ db/
 
 /src/drush/
 
+/src/web/themes/*/.sass-cache
+/src/web/themes/*/*.map
 # End of https://www.gitignore.io/api/drupal8

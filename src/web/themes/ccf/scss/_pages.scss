@@ -21,7 +21,7 @@
       position: relative;
       margin-right: 8px;
       margin-bottom: 15px;
-      padding-right: 10px;
+      padding-right: 24px;
       width: 49%;
       height: 120px;
       background-color: #FFFFFF;
@@ -80,6 +80,7 @@
     width: 75%;
     margin: 0 auto;
   }
+
   .formation {
     .page-header {
       padding: 15px;
@@ -87,6 +88,7 @@
       text-align: center;
       color: #ffffff;
     }
+
     .author {
       margin-bottom: 15px;
       font-size: 0.8em;
@@ -97,20 +99,24 @@
     .field--name-field-video {
       text-align: center;
       margin-bottom: 10px;
+
       video {
         width: 100% !important;
       }
     }
+
     .field--name-body {
       margin: 10px auto;
       padding: 15px;
       text-align: justify;
       background-color: #ffffff;
     }
+
     .field--name-field-category,
     .field--name-field-unit {
-      float :left;
+      float: left;
       margin-bottom: 10px;
+
       a {
         text-decoration: none;
         padding: 4px 8px;
@@ -118,31 +124,39 @@
         font-weight: bold;
         color: #000000;
         background-color: #b7a369ff;
+
         &:hover {
           background-color: #555555;
         }
       }
     }
+
     .field--name-field-unit {
       margin-bottom: 0px;
+
       .field--items {
         display: flex;
         justify-content: center;
+
         .field--item {
           &:after {
             font-weight: bold;
             content: '/';
             margin: 0 2px;
           }
+
           &:last-child {
             margin-right: 0;
+
             &:after {
               content: '';
             }
           }
+
           a {
             color: #b7a369ff;
             background-color: #000000;
+
             &:hover {
               background-color: #555555;
             }
@@ -150,31 +164,47 @@
         }
       }
     }
+
     .field--name-field-tags {
       .field--items {
         display: flex;
         justify-content: end;
+
         .field--item {
           margin-right: 5px;
+
           a {
             text-transform: lowercase;
             color: #C0C0C0;
+
             &:before {
               content: '#';
-            }
-            &:hover {
-              color: #505050;
-            }
-          }
-          &:last-child {
-            margin-right: 0;
-          }
-        }
 
+              &:hover {
+                color: #505050;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+        }
       }
     }
   }
-
 }
 
-
+.path-user {
+  #user-login-form {
+    margin-top: 15px;
+    label {
+      color: #ffffff;
+    }
+    .btn-primary {
+      background-color: #b7a369ff;
+      border-color: transparent;
+    }
+  }
+}

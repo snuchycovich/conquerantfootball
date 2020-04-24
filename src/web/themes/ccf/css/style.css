@@ -6351,7 +6351,7 @@ body {
   background-color: #000000; }
 
 .navbar-header {
-  width: 100%; }
+  float: left; }
 
 .navbar-default {
   text-transform: uppercase;
@@ -6381,7 +6381,7 @@ body {
     position: relative;
     margin-right: 8px;
     margin-bottom: 15px;
-    padding-right: 10px;
+    padding-right: 24px;
     width: 49%;
     height: 120px;
     background-color: #FFFFFF;
@@ -6484,10 +6484,18 @@ body {
       color: #C0C0C0; }
       .page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:before {
         content: '#'; }
-      .page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:hover {
-        color: #505050; }
-    .page-node-type-formation .formation .field--name-field-tags .field--items .field--item:last-child {
-      margin-right: 0; }
+        .page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:before:hover {
+          color: #505050; }
+      .page-node-type-formation .formation .field--name-field-tags .field--items .field--item a:last-child {
+        margin-right: 0; }
+
+.path-user #user-login-form {
+  margin-top: 15px; }
+  .path-user #user-login-form label {
+    color: #ffffff; }
+  .path-user #user-login-form .btn-primary {
+    background-color: #b7a369ff;
+    border-color: transparent; }
 
 #block-ccf-main-menu {
   font-weight: bold; }
@@ -6519,5 +6527,32 @@ body {
     border-radius: 10px; }
     #block-connexionutilisateur #user-login-form #edit-actions {
       text-align: center; }
+
+@media (max-width: 959px) {
+  .navbar-header {
+    float: none; }
+
+  #block-home img {
+    width: 300px; }
+  #block-home h2 {
+    font-size: 3em; }
+
+  .path-academy a {
+    text-decoration: none; }
+  .path-academy .region-content {
+    width: 100%;
+    margin: 0; }
+  .path-academy .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%; }
+    .path-academy .view-content .views-row {
+      width: 100%; }
+
+  .page-node-type-formation .formation .field--name-field-tags {
+    clear: both; }
+    .page-node-type-formation .formation .field--name-field-tags .field--items {
+      justify-content: start; } }
 
 /*# sourceMappingURL=style.css.map */
